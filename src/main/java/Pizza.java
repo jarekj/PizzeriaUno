@@ -3,11 +3,6 @@ public class Pizza {
     private String topping;
     private String saouce;
 
-    public Pizza(String dough, String topping, String saouce) {
-        this.dough = dough;
-        this.topping = topping;
-        this.saouce = saouce;
-    }
 
     public void setDough(String dough) {
         this.dough = dough;
