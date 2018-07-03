@@ -27,6 +27,9 @@ public class Main {
             default:
                 System.out.println("Pizza not selected");
         }
-        System.out.println(waiter.getPizza());
+        if(whichPizza == 1 || whichPizza == 2 || whichPizza == 3) {
+            System.out.print("You have chosen: ");
+            System.out.print(waiter.getPizza());
+        }
     }
 }
