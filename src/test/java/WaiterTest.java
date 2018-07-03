@@ -37,4 +37,21 @@ public class WaiterTest {
         Assert.assertEquals(expectedSaouce, actualSaouce);
         Assert.assertEquals(expectedTopping, actualTopping);
     }
+
+    @Test
+    public void givenWaiterWhenHawaiianBuilderIsSetThenHawaiianPizzaReturn(){
+        // GIVEN
+        Waiter waiter = new Waiter();
+
+        // WHEN
+        waiter.setPizzaBuilder(new HawaiianBuilder());
+        Pizza pizza = waiter.getPizza();
+
+        // THEN
+        Assert.assertEquals(pizza.getDough(), Constance.HAWAIAN_DOUGH);
+        Assert.assertEquals(pizza.getSaouce(), Constance.HAWAIAN_SAUCE);
+        Assert.assertEquals(pizza.getTopping(), Constance.HAWAIAN_TOPPING);
+
+
+    }
 }
