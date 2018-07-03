@@ -15,4 +15,13 @@ public class Pizza {
     public void setSaouce(String saouce) {
         this.saouce = saouce;
     }
+
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "dough='" + dough + '\'' +
+                ", topping='" + topping + '\'' +
+                ", saouce='" + saouce + '\'' +
+                '}';
+    }
 }
