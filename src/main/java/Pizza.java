@@ -16,6 +16,18 @@ public class Pizza {
         this.saouce = saouce;
     }
 
+    public String getDough() {
+        return dough;
+    }
+
+    public String getTopping() {
+        return topping;
+    }
+
+    public String getSaouce() {
+        return saouce;
+    }
+
     @Override
     public String toString() {
         return "Pizza{" +
